@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <type name="Magento\GiftMessage\Model\GiftMessageConfigProvider">
+        <plugin name="zero1_giftmessageforvirtualorders_magento_giftmessage_model_giftmessageconfigprovider" type="Zero1\GiftMessageForVirtualOrders\Plugin\Magento\GiftMessage\Model\GiftMessageConfigProvider"/>
+    </type>
+    <preference for="Magento\GiftMessage\Api\CartRepositoryInterface" type="Zero1\GiftMessageForVirtualOrders\Model\CartRepository"/>
+    <preference for="Magento\GiftMessage\Api\GuestCartRepositoryInterface" type="Zero1\GiftMessageForVirtualOrders\Model\GuestCartRepository"/>
+</config>
